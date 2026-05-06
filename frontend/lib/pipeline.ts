@@ -1,4 +1,4 @@
-// PayGuard Security Pipeline - TypeScript simulation of the Go backend logic
+// Galaxy Scrutinizer Pipeline - TypeScript simulation of the Go backend logic
 
 export type Decision = "ALLOW" | "ASK" | "BLOCK";
 export type RiskTier = "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";

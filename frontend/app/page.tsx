@@ -1,18 +1,16 @@
-import Nav from "@/components/Nav";
 import Hero from "@/components/sections/Hero";
-import MCPProtection from "@/components/sections/MCPProtection";
-import Pipeline from "@/components/sections/Pipeline";
-import Features from "@/components/sections/Features";
+import StatsBar from "@/components/sections/StatsBar";
+import ScrutinizerPipeline from "@/components/sections/ScrutinizerPipeline";
+import ProblemSolution from "@/components/sections/ProblemSolution";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-dark-900">
-      <Nav />
       <Hero />
-      <MCPProtection />
-      <Pipeline />
-      <Features />
+      <StatsBar />
+      <ScrutinizerPipeline />
+      <ProblemSolution />
       <Footer />
     </main>
   );

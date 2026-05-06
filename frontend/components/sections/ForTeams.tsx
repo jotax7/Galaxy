@@ -41,7 +41,7 @@ const b2bFeatures = [
   {
     icon: Building2,
     title: "On-prem deployment",
-    description: "Run PayGuard server on your own infrastructure. Zero data leaves your environment. Enterprise only.",
+    description: "Run Galaxy on your own SIFT infrastructure. Zero evidence data leaves your environment. Enterprise only.",
   },
 ];
 
@@ -66,8 +66,8 @@ export default function ForTeams() {
             <span className="text-neon-blue">org scale</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            PayGuard Team and Enterprise give your security and engineering leads full visibility
-            and control over every AI payment across the organization.
+            Galaxy Team and Enterprise give your DFIR leads full visibility
+            and control over every AI-generated finding across the organization.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ export default function ForTeams() {
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" />
                 <div className="w-2.5 h-2.5 rounded-full bg-neon-green/50" />
               </div>
-              <span className="text-xs font-mono text-gray-600">payguard.io/dashboard/org/acme</span>
+              <span className="text-xs font-mono text-gray-600">galaxy.dfir/dashboard/org/acme</span>
             </div>
 
             <div className="p-5 space-y-4">

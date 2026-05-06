@@ -66,7 +66,7 @@ const stages = [
     icon: BookOpen,
     title: "Audit Log",
     description: "Every decision is recorded.",
-    detail: "Tamper-evident JSONL with SHA-256 hash chain. Verify integrity anytime with `payguard audit --verify`.",
+    detail: "Tamper-evident JSONL with SHA-256 hash chain. Verify integrity anytime with `galaxy scrutinizer --verify`.",
     textColor: "text-neon-green",
     borderColor: "border-neon-green/30",
     bgColor: "bg-neon-green/5",
@@ -103,7 +103,7 @@ export default function Pipeline() {
             <span className="gradient-text">before it moves</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-xl mx-auto">
-            PayGuard runs automatically on every payment. You see the result — allow, block, or ask.
+            Galaxy runs automatically on every AI finding. You see the result — allow, rerun, or block.
           </p>
         </div>
 

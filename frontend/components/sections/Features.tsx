@@ -95,7 +95,7 @@ export default function Features() {
             <span className="gradient-text-danger">agentic era</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            No existing Claude Code plugin or MCP middleware provides financial security for agent transactions. PayGuard fills that gap.
+            No existing DFIR AI framework verifies its own findings before reporting. Galaxy fills that gap.
           </p>
         </div>
 
@@ -136,8 +136,8 @@ export default function Features() {
             <span className="text-red-400">Nobody verifies the payment matches what was agreed.</span>
           </h3>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            A compromised MCP server can silently swap the recipient, inflate the amount, or change the currency — after the agent has already decided to pay.
-            PayGuard sits in the middle and verifies every payment before it executes.
+            An AI forensic agent can hallucinate memory offsets, fabricate file paths, and invent registry keys — then submit them as evidence.
+            Galaxy sits between the AI and the analyst and verifies every finding before it reaches the report.
           </p>
         </div>
       </div>

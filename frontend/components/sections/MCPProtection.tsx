@@ -48,7 +48,7 @@ export default function MCPProtection() {
             Protects your MCP connections
           </h2>
           <p className="text-lg text-gray-400 max-w-xl mx-auto">
-            PayGuard wraps every payment tool your Vercel agent calls
+            Galaxy scrutinizes every finding your forensic agent produces
           </p>
         </div>
 

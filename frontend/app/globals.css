@@ -239,3 +239,77 @@ body {
 .table-row-hover:hover {
   background: rgba(0, 255, 136, 0.05);
 }
+
+/* Terminal text — monospace, green-on-black aesthetic */
+.terminal-text {
+  font-family: 'JetBrains Mono', monospace;
+  color: #00ff88;
+  background: #000;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+}
+
+/* Stage pills — small colored status pills */
+.stage-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.stage-pill-green {
+  background: rgba(0, 255, 136, 0.1);
+  color: #00ff88;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.stage-pill-red {
+  background: rgba(255, 51, 102, 0.1);
+  color: #ff3366;
+  border: 1px solid rgba(255, 51, 102, 0.3);
+}
+
+.stage-pill-yellow {
+  background: rgba(250, 204, 21, 0.1);
+  color: #fbbf24;
+  border: 1px solid rgba(250, 204, 21, 0.3);
+}
+
+/* Constellation logo animations */
+@keyframes cdot-glow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; filter: drop-shadow(0 0 4px #00d4ff) drop-shadow(0 0 10px #00d4ff66); }
+}
+
+@keyframes chalo-expand {
+  0% { opacity: 0.35; transform: scale(1); }
+  60% { opacity: 0; transform: scale(2.4); }
+  100% { opacity: 0; transform: scale(2.4); }
+}
+
+.constellation-dot {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: cdot-glow 2.8s ease-in-out infinite;
+}
+
+.constellation-halo {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: chalo-expand 2.8s ease-out infinite;
+}
+
+/* Announcement bar live dot */
+@keyframes live-ping {
+  0% { transform: scale(1); opacity: 0.8; }
+  70% { transform: scale(2.2); opacity: 0; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.live-ping {
+  animation: live-ping 1.6s ease-out infinite;
+}

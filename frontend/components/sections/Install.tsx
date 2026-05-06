@@ -9,9 +9,9 @@ const methods = [
     label: "Claude Plugin",
     icon: Terminal,
     steps: [
-      { cmd: "claude plugins marketplace add payguard/payguard", comment: "Add to marketplace" },
-      { cmd: "claude plugins install payguard@payguard", comment: "Install plugin" },
-      { cmd: "payguard demo", comment: "Run demo to verify" },
+      { cmd: "claude plugins marketplace add galaxy-dfir/galaxy", comment: "Add to marketplace" },
+      { cmd: "claude plugins install galaxy@galaxy-dfir", comment: "Install plugin" },
+      { cmd: "galaxy demo", comment: "Run demo to verify" },
     ],
     note: "Recommended. Auto-registers PreToolUse hook.",
   },
@@ -20,9 +20,9 @@ const methods = [
     label: "npm",
     icon: Package,
     steps: [
-      { cmd: "npm i -g payguard-security", comment: "Install globally" },
-      { cmd: "payguard install", comment: "Register hook" },
-      { cmd: "payguard demo", comment: "Verify install" },
+      { cmd: "npm i -g galaxy-dfir", comment: "Install globally" },
+      { cmd: "galaxy install", comment: "Register hook" },
+      { cmd: "galaxy demo", comment: "Verify install" },
     ],
     note: "Builds Go binary on postinstall. Requires Node.js 16+.",
   },
@@ -31,9 +31,9 @@ const methods = [
     label: "From Source",
     icon: GitBranch,
     steps: [
-      { cmd: "git clone payguard && cd payguard", comment: "Clone repo" },
-      { cmd: "go build -o payguard-bin .", comment: "Build binary (requires Go 1.22+)" },
-      { cmd: "./payguard-bin install", comment: "Register with Claude Code" },
+      { cmd: "git clone github.com/jotax7/Galaxy && cd Galaxy", comment: "Clone repo" },
+      { cmd: "go build -o galaxy-bin .", comment: "Build binary (requires Go 1.22+)" },
+      { cmd: "./galaxy-bin install", comment: "Register with Claude Code" },
     ],
     note: "Requires Go 1.22+. Produces a 6.5MB static binary.",
   },
@@ -140,10 +140,10 @@ export default function Install() {
           </div>
 
           {/* Post-install commands */}
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { cmd: "payguard demo", desc: "Run 7 attack scenarios" },
-              { cmd: "payguard audit", desc: "View payment audit trail" },
+              { cmd: "galaxy demo", desc: "Run hallucination scenarios" },
+              { cmd: "galaxy scrutinizer --audit", desc: "View finding audit trail" },
             ].map(({ cmd, desc }) => (
               <div key={cmd} className="glass-card p-4 border border-white/5 hover:border-neon-green/20 transition-all">
                 <div className="flex items-center justify-between mb-2">
