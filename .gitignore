@@ -1,0 +1,51 @@
+# Build artifacts
+galaxy
+galaxy.exe
+*.test
+*.out
+
+# Go
+vendor/
+go.work
+
+# Node / Next
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+.eslintcache
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Logs / state
+audit.jsonl
+state.json
+state.lock
+*.log
+.galaxy/
+
+# Datasets — heavy, never commit
+datasets/raw/
+datasets/runs/
+*.E01
+*.dd
+*.vmdk
+*.mem
+*.raw
+*.vmem
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo

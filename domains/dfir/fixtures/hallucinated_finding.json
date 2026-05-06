@@ -1,0 +1,39 @@
+{
+  "finding": {
+    "id": "f-demo-hallucination",
+    "title": "Persistence in registry Run key 'malicious_key'",
+    "description": "Suspicious autorun entry detected, suggesting persistence mechanism for unknown malware.",
+    "artifact_type": "registry_key",
+    "source": "disk_image",
+    "evidence_path": "/mnt/evidence/Windows/System32/config/SOFTWARE",
+    "line_number": 8420,
+    "mitre_ttps": ["T1547.001"],
+    "confidence": 0.85,
+    "severity": "high",
+    "tool_execution": {
+      "execution_id": "exec-2",
+      "tool": "regripper -p run",
+      "command": "regripper -p run /mnt/evidence/Windows/System32/config/SOFTWARE",
+      "started_at": "2026-04-15T12:01:30Z",
+      "output_digest": "sha256:e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6",
+      "output_bytes": 234
+    },
+    "supporting_findings": []
+  },
+  "evidence": {
+    "evidence_hashes": {
+      "/mnt/evidence/Windows/System32/config/SOFTWARE": "sha256:demo"
+    }
+  },
+  "siblings": [],
+  "executions": [
+    {
+      "execution_id": "exec-2",
+      "tool": "regripper -p run",
+      "command": "regripper -p run /mnt/evidence/Windows/System32/config/SOFTWARE",
+      "started_at": "2026-04-15T12:01:30Z",
+      "output_digest": "sha256:e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6",
+      "output_bytes": 234
+    }
+  ]
+}

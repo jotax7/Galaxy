@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "command": ".galaxy/hooks/galaxy.sh",
+        "description": "Galaxy: gate tool calls during DFIR sessions to enforce read-only evidence and validate tool output integrity."
+      }
+    ]
+  }
+}
